@@ -1,12 +1,8 @@
 *** Settings ***
-Library    SeleniumLibrary
-Resource   ../resources/common.robot
-
-*** Variables ***
-${OUTPUT_DIR}    ./output
+Resource    ../resources/common.robot
 
 *** Test Cases ***
-Open Chrome and Wait for Manual Start
-    [Setup]    Open Browser and Wait for Manual Start
-    Perform Test Steps
+Open Chrome And Wait For User
+    Open Chrome Browser
+    Wait For User Navigation
     [Teardown]    Close Browser

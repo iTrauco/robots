@@ -1,13 +1,11 @@
 *** Settings ***
-Library    SeleniumLibrary
-Library    OperatingSystem
+Library    Browser
 
 *** Keywords ***
-Open Browser and Wait for Manual Start
-    Open Browser    about:blank    browser=chrome
-    Maximize Browser Window
-    [Prompt User]    Navigate to the desired page and press Enter to start the automation
-    [Input]    Press Enter to continue...
+Open Chrome Browser
+    [Documentation]    Opens a blank Chrome browser.
+    Open Browser    about:blank    browser=chromium
 
-Close Browser
-    Close Browser
+Wait For User Navigation
+    [Documentation]    Waits for the user to navigate and press Enter.
+    Press Keys    locator=css:body    \n
