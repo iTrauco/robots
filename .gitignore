@@ -1,0 +1,6 @@
+
+# Ignore all files and directories containing 'prompt' in their names, including dotfiles
+*prompt*
+.prompt*
+prompt/
+prompts/

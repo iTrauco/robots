@@ -1,0 +1,10 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - robotframework
+  - robotframework-browser
+  - pip
+  - pip:
+    - robotframework-seleniumlibrary
+    - requests
