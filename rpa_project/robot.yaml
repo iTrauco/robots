@@ -1,0 +1,5 @@
+tasks:
+  RunTasks:
+    shell: python -m robot tasks/task.robot
+artifacts:
+  - output/*
