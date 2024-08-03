@@ -56,3 +56,12 @@ yarn-error.log*
 coverage/
 .npm
 *.log
+
+
+# prompts
+prompts_*
+prompts/
+*prompt
+prompt*
+.prompt
+*.prompts
