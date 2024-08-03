@@ -57,11 +57,13 @@ coverage/
 .npm
 *.log
 
+# Custom ignores for files and directories containing 'prompt'
+*prompt*
 
-# prompts
-prompts_*
-prompts/
-*prompt
-prompt*
-.prompt
-*.prompts
+# Other ignore rules can go here
+*.log
+*.tmp
+*.bak
+node_modules/
+dist/
+.env
